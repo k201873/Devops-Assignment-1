@@ -54,3 +54,63 @@ h2 {
 .btn-primary:hover {
     background-color: #007acc; /* Darker shade on hover */
 }
+
+body.home-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-section a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.right-section a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+p {
+    line-height: 1.6;
+    color: #333333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
