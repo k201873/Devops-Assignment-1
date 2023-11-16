@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 16px;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the navigation bar */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 0;
+      position: sticky;
+      top: 0; 
+    }
+
+    /* Style the navigation bar links */
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style individual navigation bar links */
+    .nav-links li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    /* Style the navigation bar link text */
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Style the login button */
+    .login-btn {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333333;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .project-card {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+    .project-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .project-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333333;
+    }
+
+    .project-card p:last-child {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .project-card h3{
+        font-weight: bold;
+    }
+
+    .filter-container {
+      display: flex;
+      margin: 0 auto;
+      width: 20%;
+    }
+
+    .filter-label {
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .filter-input {
+      padding: 5px;
+    }
+    .project{
+        text-align: center;
+        margin-bottom: 105px;
+    }
+    .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+  </style>
+
+
+  <body class="home-body">
+    <nav class="nav-bar">
+      <a href="index.html" class="login-btn">Logout</a>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="#">Certifications</a></li>
+      </ul>
+    </nav>
+
+    <div id="projects" class="project">
+        <h2 >My Projects</h2></br>
+        <div class="filter-container">
+          <label for="filter-input" class="filter-label"
+            >Filter:</label
+          >
+          <input
+            type="text"
+            id="filter-input"
+            class="filter-input"
+            placeholder="Enter technology"
+          />
+        </div>
+  
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>Oil Change Application</h3>
+            <p>This app enabled car wash and mechanic vendor to provide and keep track of the services they provide to their customers.</p>
+            <p>Technologies: Java, SpringBoot, ReactNative, Postgres and Figma</p>
+          </div>
+  
+          <div class="project-card">
+            <h3>EasyOps</h3>
+            <p>This was a MVP for the client which managed restaurent services like restroom checks, temperature logs of freezer etc..</p>
+            <p>Technologies: Java, SpringBoot, ThyemeLeaf, H2-console</p>
+          </div>
+  
+          <div class="project-card">
+            <h3>LinkedIn Clone</h3>
+            <p>This was a prototype of LinkedIn which had features such as making connections, chatting , posting and viewing connection profiles.</p>
+            <p>Technologies:ReactJs, NodeJs and Firebase</p>
+          </div>
+  
+          <div class="project-card">
+              <h3>ChatApp Using Tcp-Ip</h3>
+              <p>This project had chat server for both client and server with multiple clients allowed in one work spaces and faster responces.</p>
+              <p>Technologies: Express JS ,Node JS and Socket.io</p>
+          </div>
+  
+          <div class="project-card">
+              <h3>Pirani Food Center</h3>
+              <p>Designed a food-order website for users to place orders ,recieve notification and give the restaurent owner insights about their restaurents.</p>
+              <p>Technologies: ReactJs, Php, MYSQL</p>
+          </div>
+  
+          <div class="project-card">
+              <h3>Fast Parallel Algorithm Solver</h3>
+              <p>This project involved a fast and proficient algorith which sorted big data like 10000 values in under seconds using bucketSort.</p>
+              <p>Technologies: C++, MPI ,OPENMP and Linux</p>
+          </div>
+        </div>
+  
+      </div>
+      <footer class="footer">
+        <p>&copy; K201873</p>
+      </footer>
+
+      <script>
+
+        const filterInput = document.getElementById("filter-input");
+        const projectsContainer = document.querySelector(".projects-container");
+  
+        filterInput.addEventListener("keyup", () => {
+          const filterText = filterInput.value.toLowerCase();
+          const projects = projectsContainer.querySelectorAll(".project-card");
+  
+          projects.forEach((project) => {
+            const projectTechnologies = project
+              .querySelector("p:last-child")
+              .textContent.toLowerCase();
+            if (projectTechnologies.includes(filterText)) {
+              project.style.display = "block";
+            } else {
+              project.style.display = "none";
+            }
+          });
+        });
+        </script>
+</body>
+</html>

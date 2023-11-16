@@ -85,65 +85,35 @@
     a:hover {
       text-decoration: underline;
     }
-    .projects-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 20px;
-    }
+    .footer {
+        position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
 
-    .project-card {
-      width: 300px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin: 10px;
-    }
-
-    .project-card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .project-card p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .filter-container {
-      display: flex;
-      margin: 20px;
-      align-items:center ;
-    }
-
-    .filter-label {
-      margin-right: 10px;
-      margin-top: 5px;
-    }
-
-    .filter-input {
-      padding: 5px;
-    }
-    .project{
-        text-align: center;
-    }
   </style>
+
+
   <body class="home-body">
     <nav class="nav-bar">
       <a href="index.html" class="login-btn">Logout</a>
 
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Education</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
         <li><a href="#">Certifications</a></li>
       </ul>
     </nav>
 
-    <div class="container">
+    <div id="home" class="container">
       <section>
         <h1>Welcome to My Home Page</h1>
         <p>
-          Hi, I'm Shayan Hassan. A dedicated and enthusiastic professional with
+          Hi, I'm Shayan Hassan and i am currently studying bachelors at FAST NUCES. A dedicated and enthusiastic professional with
           a passion for Computer Science. I have a proven track record of
           development and now working on Devops. Learn more about my
           professional journey on my
@@ -155,66 +125,8 @@
         </p>
       </section>
     </div>
-    <div class="project">
-      <h2 >My Projects</h3>
-      <div class="filter-container">
-        <label for="filter-input" class="filter-label"
-          >Filter by Technology:</label
-        >
-        <input
-          type="text"
-          id="filter-input"
-          class="filter-input"
-          placeholder="Enter technology"
-        />
-      </div>
-
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Project Name</h3>
-          <p>Project Description</p>
-          <p>Technologies: C++, Java</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project Name</h3>
-          <p>Project Description</p>
-          <p>Technologies: React, JavaScript</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project Name</h3>
-          <p>Project Description</p>
-          <p>Technologies: C, Python</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Project Name</h3>
-          <p>Project Description</p>
-          <p>Technologies: C++, HTML, CSS</p>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const filterInput = document.getElementById("filter-input");
-      const projectsContainer = document.querySelector(".projects-container");
-
-      filterInput.addEventListener("keyup", () => {
-        const filterText = filterInput.value.toLowerCase();
-        const projects = projectsContainer.querySelectorAll(".project-card");
-
-        projects.forEach((project) => {
-          const projectTechnologies = project
-            .querySelector("p:last-child")
-            .textContent.toLowerCase();
-          if (projectTechnologies.includes(filterText)) {
-            project.style.display = "block";
-          } else {
-            project.style.display = "none";
-          }
-        });
-      });
-    </script>
+    <footer class="footer">
+        <p>&copy; K201873</p>
+      </footer>
   </body>
 </html>
